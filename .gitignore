@@ -1,0 +1,9 @@
+.idea/
+*.pyc
+logs/*
+media/*
+collectstatic/
+*venv
+uploads/*
+
+.env
