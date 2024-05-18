@@ -7,7 +7,7 @@ from apps.core.models import AbstractBaseModel
 class ProductCategory(AbstractBaseModel):
     name = models.CharField(max_length=255, null=False, blank=False)
     name_translit = models.CharField(max_length=255, null=True, blank=True)
-    text_color = ColorField(format='rgba', null=True, blank=True)
+    text_color = ColorField(format='hex', null=True, blank=True)
 
     class Meta:
         db_table = 'product_categories'
